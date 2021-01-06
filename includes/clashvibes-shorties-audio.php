@@ -15,11 +15,7 @@
  * @param array  $atts array of values.
  * @param string $src url for audio.
  * @return mixed
- * Here you can see when post title is clicked a JavaScript
- * function post_popup is called up. This functions retrieve the post
- * content and displays as popup.
- * I place the shortcode [hero][/hero] in by Blog Posts page.
- * This is how it looks in frontend
+ * 
  */
 
 function clashvibes_audio_enqueue_style() {	
