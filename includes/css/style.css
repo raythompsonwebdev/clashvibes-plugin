@@ -280,19 +280,19 @@ a {
     -ms-grid-column-span: 3;
     grid-area: 1 / 3 / 3 / 6;
   }
-  div.audioExcerpt div#audio_controls div#video_seek,
-  div.audioExcerpt div#videocontrols div#video_seek,
-  div.videoExcerpt div#audio_controls div#video_seek,
-  div.videoExcerpt div#videocontrols div#video_seek {
+  div.audioExcerpt div#audio_controls div#time,
+  div.audioExcerpt div#videocontrols div#time,
+  div.videoExcerpt div#audio_controls div#time,
+  div.videoExcerpt div#videocontrols div#time {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
     grid-area: 2 / 3 / 2 / 6;
   }
-  div.audioExcerpt div#audio_controls div#time,
-  div.audioExcerpt div#videocontrols div#time,
-  div.videoExcerpt div#audio_controls div#time,
-  div.videoExcerpt div#videocontrols div#time {
+  div.audioExcerpt div#audio_controls div#video_seek,
+  div.audioExcerpt div#videocontrols div#video_seek,
+  div.videoExcerpt div#audio_controls div#video_seek,
+  div.videoExcerpt div#videocontrols div#video_seek {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
@@ -320,6 +320,8 @@ a {
   div.audioExcerpt div#videocontrols #btns_box button.player-button,
   div.videoExcerpt div#audio_controls #btns_box button.player-button,
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
+    padding: 0;
+    margin: 0;
     width: 33.3%;
     display: block;
     height: 100%;
@@ -386,7 +388,7 @@ a {
     text-align: center;
     display: block;
     color: #fff;
-    line-height: 53px;
+    line-height: 45px;
     margin: auto;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
@@ -433,6 +435,8 @@ a {
     background-color: #fff;
     position: relative;
     height: 24px;
+    margin: 0;
+    padding: 0;
   }
   div.audioExcerpt div#audio_controls div#progress progress#playback,
   div.audioExcerpt div#videocontrols div#progress progress#playback,
@@ -475,44 +479,37 @@ a {
   div.videoExcerpt div#audio_controls div#time,
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
-    color: #262626;
-    height: 25px;
+    height: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    width: 25%;
-    line-height: 25px;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    width: 30%;
+    line-height: 20px;
     text-align: center;
-    font-size: 0.8em;
-    display: block;
     background-color: #fff;
     color: #262626;
     margin-right: 0;
-    float: left;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    color: #658905;
-    background-color: #262626;
-    border: none;
-    font-size: 1em;
-    text-shadow: 1px 1px #353333;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
+    width: 20%;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 0;
     color: #658905;
     background-color: #262626;
     border: none;
-    font-size: 1em;
     text-shadow: 1px 1px #353333;
   }
   div.audioExcerpt div#audio_controls div#video_seek,
@@ -523,29 +520,26 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 20px;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 20%;
-    display: block;
-    float: left;
-    line-height: 30px;
+    width: 15%;
+    line-height: 20px;
     color: #262626;
     background-color: #fff;
-    border: 1px solid #262626;
-    margin-right: 0.5em;
+    margin-right: 0.25em;
     text-align: center;
-    clear: both;
   }
   div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    width: 80%;
-    clear: both;
-    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 85%;
     height: 20px;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
@@ -553,29 +547,30 @@ a {
   div.videoExcerpt div#audio_controls div#video_volume,
   div.videoExcerpt div#videocontrols div#video_volume {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20px;
   }
   div.audioExcerpt div#audio_controls div#video_volume label,
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    width: 20%;
-    display: none;
-    float: left;
-    line-height: 30px;
+    width: 15%;
+    line-height: 20px;
     background-color: #fff;
     color: #262626;
-    border: 1px solid #ebeadd;
-    margin-right: 0.5em;
     text-align: center;
-    clear: both;
+    margin-right: 0.25em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    clear: both;
-    display: inline-block;
-    height: 25px;
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    height: 20px;
   }
   div.audioExcerpt #video_player,
   div.videoExcerpt #video_player {
@@ -624,47 +619,78 @@ a {
     line-height: 53px;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 2em;
-    line-height: 53px;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.9em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
-    width: 64%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -684,49 +710,45 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 48%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.8em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.9em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 1em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 1em;
+    text-align: center;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 20%;
-    line-height: 30px;
+    width: 15%;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
   div.videoExcerpt div#audio_controls div#video_volume,
   div.videoExcerpt div#videocontrols div#video_volume {
-    width: 50%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#video_volume label,
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    width: 20%;
+    width: 15%;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    width: 75%;
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -752,103 +774,24 @@ a {
   div.audioExcerpt div#videocontrols,
   div.videoExcerpt div#audio_controls,
   div.videoExcerpt div#videocontrols {
-    height: auto;
     width: 100%;
-    margin: 0 auto;
-    border: #ebeadd solid 1px;
-    padding: 0.5em;
-    background-color: #262626;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: (25px)[4];
-        grid-template-rows: repeat(4, 25px);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
   }
   div.audioExcerpt div#audio_controls #btns_box,
   div.audioExcerpt div#videocontrols #btns_box,
   div.videoExcerpt div#audio_controls #btns_box,
   div.videoExcerpt div#videocontrols #btns_box {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: 1 / 1 / 3 / 3;
-  }
-  div.audioExcerpt div#audio_controls div#progress,
-  div.audioExcerpt div#videocontrols div#progress,
-  div.videoExcerpt div#audio_controls div#progress,
-  div.videoExcerpt div#videocontrols div#progress {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-    grid-area: 1 / 3 / 3 / 6;
-  }
-  div.audioExcerpt div#audio_controls div#video_seek,
-  div.audioExcerpt div#videocontrols div#video_seek,
-  div.videoExcerpt div#audio_controls div#video_seek,
-  div.videoExcerpt div#videocontrols div#video_seek {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-    grid-area: 2 / 3 / 2 / 6;
-  }
-  div.audioExcerpt div#audio_controls div#time,
-  div.audioExcerpt div#videocontrols div#time,
-  div.videoExcerpt div#audio_controls div#time,
-  div.videoExcerpt div#videocontrols div#time {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-area: 3 / 1 / 4 / 6;
-  }
-  div.audioExcerpt div#audio_controls div#video_volume,
-  div.audioExcerpt div#videocontrols div#video_volume,
-  div.videoExcerpt div#audio_controls div#video_volume,
-  div.videoExcerpt div#videocontrols div#video_volume {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-area: 4 / 1 / 5 / 6;
-  }
-  div.audioExcerpt div#audio_controls #btns_box,
-  div.audioExcerpt div#videocontrols #btns_box,
-  div.videoExcerpt div#audio_controls #btns_box,
-  div.videoExcerpt div#videocontrols #btns_box {
-    height: 45px;
     width: 100%;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button,
   div.audioExcerpt div#videocontrols #btns_box button.player-button,
   div.videoExcerpt div#audio_controls #btns_box button.player-button,
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
-    width: 33.3%;
-    display: block;
-    height: 100%;
-    outline: none;
-    text-align: center;
-    font-size: 1em;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transition: all 0.2s linear 0s;
-    transition: all 0.2s linear 0s;
-    color: #262626;
-    border: #ebeadd solid 1px;
-    background-color: #658905;
-    float: left;
+    font-size: 0.9em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    background-color: #262626;
-    color: #fff;
-    border: #ebeadd solid 1px;
     cursor: pointer;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button:active,
@@ -889,12 +832,7 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
-    font-size: 2em;
-    text-align: center;
-    display: block;
-    color: #fff;
-    line-height: 53px;
-    margin: auto;
+    font-size: 1.8em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
@@ -929,52 +867,29 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     font-weight: bold;
-    color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
     width: 100%;
-    display: inline-block;
-    background-color: #fff;
-    position: relative;
-    height: 24px;
   }
   div.audioExcerpt div#audio_controls div#progress progress#playback,
   div.audioExcerpt div#videocontrols div#progress progress#playback,
   div.videoExcerpt div#audio_controls div#progress progress#playback,
   div.videoExcerpt div#videocontrols div#progress progress#playback {
-    background-color: #262626;
-    height: 12px;
-    display: block;
-    margin: 0;
-    padding: 0;
     width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
   div.videoExcerpt div#audio_controls div#progress span#play_progress,
   div.videoExcerpt div#videocontrols div#progress span#play_progress {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    background-color: #fdd015;
-    height: 12px;
-    display: block;
-    margin: 0;
-    padding: 0;
     width: 100%;
-    left: 0;
   }
   div.audioExcerpt div#audio_controls div#progress span#load_progress,
   div.audioExcerpt div#videocontrols div#progress span#load_progress,
   div.videoExcerpt div#audio_controls div#progress span#load_progress,
   div.videoExcerpt div#videocontrols div#progress span#load_progress {
-    background-color: #cc6;
-    height: 12px;
-    display: block;
-    margin: 0;
     padding: 0;
   }
   div.audioExcerpt div#audio_controls div#time,
@@ -982,45 +897,22 @@ a {
   div.videoExcerpt div#audio_controls div#time,
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
-    color: #262626;
-    height: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    width: 25%;
-    line-height: 25px;
-    text-align: center;
-    font-size: 0.8em;
-    display: block;
-    background-color: #fff;
-    color: #262626;
-    margin-right: 0;
-    float: left;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.85em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    color: #658905;
-    background-color: #262626;
-    border: none;
-    font-size: 1em;
-    text-shadow: 1px 1px #353333;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    color: #658905;
-    background-color: #262626;
-    border: none;
-    font-size: 1em;
-    text-shadow: 1px 1px #353333;
+    font-size: 0.95em;
   }
   div.audioExcerpt div#audio_controls div#video_seek,
   div.audioExcerpt div#videocontrols div#video_seek,
@@ -1032,24 +924,14 @@ a {
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 25%;
-    float: left;
-    line-height: 20px;
-    color: #262626;
-    background-color: #fff;
-    border: 1px solid #262626;
-    margin-right: 0.5em;
-    text-align: center;
-    clear: both;
+    width: 15%;
+    font-size: 0.9em;
   }
   div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    width: 100%;
-    clear: both;
-    display: inline-block;
-    height: 20px;
+    width: 85%;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -1061,25 +943,15 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    width: 20%;
-    display: none;
-    float: left;
-    line-height: 30px;
-    background-color: #fff;
-    color: #262626;
-    border: 1px solid #ebeadd;
-    margin-right: 0.5em;
-    text-align: center;
-    clear: both;
+    width: 15%;
+    font-size: 0.9em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    width: 100%;
-    clear: both;
-    display: inline-block;
-    height: 25px;
+    width: 85%;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -1105,7 +977,6 @@ a {
   div.audioExcerpt div#videocontrols,
   div.videoExcerpt div#audio_controls,
   div.videoExcerpt div#videocontrols {
-    width: 97%;
     padding: 0.25em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button,
@@ -1114,53 +985,79 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
     width: 33.3%;
   }
-  div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
-  div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    line-height: 53px;
-  }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.7em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
-    width: 62%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -1178,56 +1075,49 @@ a {
   div.audioExcerpt div#videocontrols div#time,
   div.videoExcerpt div#audio_controls div#time,
   div.videoExcerpt div#videocontrols div#time {
-    width: 48%;
+    width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.7em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.75em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 0.85em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 20%;
-  }
-  div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
-  div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    width: 15%;
+    font-size: 0.85em;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
   div.videoExcerpt div#audio_controls div#video_volume,
   div.videoExcerpt div#videocontrols div#video_volume {
-    width: 50%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#video_volume label,
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    width: 20%;
-    font-size: 0.9em;
+    width: 15%;
+    font-size: 0.85em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -1248,17 +1138,11 @@ a {
   div.videoExcerpt #result_player {
     width: 90%;
   }
-  div.audioExcerpt div#audio_controls,
-  div.audioExcerpt div#videocontrols,
-  div.videoExcerpt div#audio_controls,
-  div.videoExcerpt div#videocontrols {
-    width: 97%;
-  }
   div.audioExcerpt div#audio_controls #btns_box,
   div.audioExcerpt div#videocontrols #btns_box,
   div.videoExcerpt div#audio_controls #btns_box,
   div.videoExcerpt div#videocontrols #btns_box {
-    width: 45%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button,
   div.audioExcerpt div#videocontrols #btns_box button.player-button,
@@ -1266,53 +1150,79 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
     width: 33.3%;
   }
-  div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
-  div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    line-height: 53px;
-  }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.6em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
-    width: 53%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -1332,54 +1242,46 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.75em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.70em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 0.9em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 0.9em;
+    font-size: 0.80em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 20%;
-  }
-  div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
-  div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    width: 15%;
+    font-size: 0.80em;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
   div.videoExcerpt div#audio_controls div#video_volume,
   div.videoExcerpt div#videocontrols div#video_volume {
     width: 100%;
-    margin: 0;
   }
   div.audioExcerpt div#audio_controls div#video_volume label,
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 1em;
+    font-size: 0.70em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -1404,7 +1306,7 @@ a {
   div.audioExcerpt div#videocontrols,
   div.videoExcerpt div#audio_controls,
   div.videoExcerpt div#videocontrols {
-    width: 97%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls #btns_box,
   div.audioExcerpt div#videocontrols #btns_box,
@@ -1426,39 +1328,71 @@ a {
     line-height: 53px;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
     font-size: 1.9em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
@@ -1466,7 +1400,6 @@ a {
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
     width: 100%;
-    margin: 0;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -1486,35 +1419,27 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.9em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.70em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 1em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 1em;
-  }
-  div.audioExcerpt div#audio_controls div#video_seek label,
-  div.audioExcerpt div#videocontrols div#video_seek label,
-  div.videoExcerpt div#audio_controls div#video_seek label,
-  div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 20%;
+    font-size: 0.80em;
   }
   div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -1522,17 +1447,11 @@ a {
   div.videoExcerpt div#videocontrols div#video_volume {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#video_volume label,
-  div.audioExcerpt div#videocontrols div#video_volume label,
-  div.videoExcerpt div#audio_controls div#video_volume label,
-  div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 1em;
-  }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -1557,7 +1476,7 @@ a {
   div.audioExcerpt div#videocontrols,
   div.videoExcerpt div#audio_controls,
   div.videoExcerpt div#videocontrols {
-    width: 98%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls #btns_box,
   div.audioExcerpt div#videocontrols #btns_box,
@@ -1571,46 +1490,72 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
     width: 33.3%;
   }
-  div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
-  div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    line-height: 53px;
-  }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.8em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
@@ -1618,7 +1563,6 @@ a {
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
     width: 100%;
-    margin: 0;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -1638,35 +1582,12 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.9em;
-  }
-  div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 1em;
-  }
-  div.audioExcerpt div#audio_controls div#time span#current_time,
-  div.audioExcerpt div#videocontrols div#time span#current_time,
-  div.videoExcerpt div#audio_controls div#time span#current_time,
-  div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 1em;
-  }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 20%;
-  }
-  div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
-  div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    width: 15%;
+    font-size: 0.80em;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -1678,13 +1599,7 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 1em;
-  }
-  div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
-  div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
-  div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
-  div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    font-size: 0.80em;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -1709,7 +1624,7 @@ a {
   div.audioExcerpt div#videocontrols,
   div.videoExcerpt div#audio_controls,
   div.videoExcerpt div#videocontrols {
-    width: 98%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls #btns_box,
   div.audioExcerpt div#videocontrols #btns_box,
@@ -1723,46 +1638,72 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
     width: 33.3%;
   }
-  div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
-  div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    line-height: 53px;
-  }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.7em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
@@ -1770,7 +1711,6 @@ a {
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
     width: 100%;
-    margin: 0;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -1790,35 +1730,35 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.9em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.70em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 1em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 1em;
+    font-size: 0.80em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
     width: 20%;
+    font-size: 0.8em;
   }
   div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    height: 20px;
+    width: 80%;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -1830,13 +1770,15 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 1em;
+    font-size: 0.80em;
+    width: 20%;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    height: 20px;
+    width: 80%;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -1876,39 +1818,71 @@ a {
     line-height: 53px;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.6em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
@@ -1929,35 +1903,17 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.8em;
-  }
-  div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 1em;
-  }
-  div.audioExcerpt div#audio_controls div#time span#current_time,
-  div.audioExcerpt div#videocontrols div#time span#current_time,
-  div.videoExcerpt div#audio_controls div#time span#current_time,
-  div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 1em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.7em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
     width: 20%;
-  }
-  div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
-  div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
-  div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -1969,13 +1925,7 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 0.9em;
-  }
-  div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
-  div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
-  div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
-  div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    font-size: 0.7em;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -2015,46 +1965,78 @@ a {
     line-height: 53px;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.6em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
-    width: 98%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -2074,23 +2056,21 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.8em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.6em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 1em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 1em;
+    font-size: 0.70em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
@@ -2102,7 +2082,7 @@ a {
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    width: 74%;
+    width: 79%;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -2114,13 +2094,13 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    width: 74%;
+    width: 79%;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -2153,53 +2133,79 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
     width: 33.3%;
   }
-  div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
-  div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    line-height: 53px;
-  }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.5em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
-    width: 98%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -2219,35 +2225,34 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.7em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.55em;
   }
   div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 0.9em;
-  }
   div.audioExcerpt div#audio_controls div#time span#current_time,
+  div.audioExcerpt div#videocontrols div#time span#duration_time,
   div.audioExcerpt div#videocontrols div#time span#current_time,
+  div.videoExcerpt div#audio_controls div#time span#duration_time,
   div.videoExcerpt div#audio_controls div#time span#current_time,
+  div.videoExcerpt div#videocontrols div#time span#duration_time,
   div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 0.9em;
+    font-size: 0.65em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
     width: 20%;
+    font-size: 0.65em;
   }
   div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -2259,13 +2264,13 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 0.8em;
+    font-size: 0.65em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {
@@ -2298,53 +2303,79 @@ a {
   div.videoExcerpt div#videocontrols #btns_box button.player-button {
     width: 33.3%;
   }
-  div.audioExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.audioExcerpt div#videocontrols #btns_box button.player-button:hover,
-  div.videoExcerpt div#audio_controls #btns_box button.player-button:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button:hover {
-    line-height: 53px;
-  }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward {
-    font-size: 1.9em;
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward {
+    font-size: 1.4em;
   }
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
   div.audioExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.audioExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-forward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-forward:hover,
   div.videoExcerpt div#audio_controls #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#audio_controls #btns_box button.player-button svg.fa-backward:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-pause:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-pause:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-play:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-play:hover,
   div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-forward:hover,
-  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover {
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-forward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button i.fa-backward:hover,
+  div.videoExcerpt div#videocontrols #btns_box button.player-button svg.fa-backward:hover {
     color: #fff;
   }
   div.audioExcerpt div#audio_controls div#progress,
   div.audioExcerpt div#videocontrols div#progress,
   div.videoExcerpt div#audio_controls div#progress,
   div.videoExcerpt div#videocontrols div#progress {
-    width: 98%;
+    width: 100%;
   }
   div.audioExcerpt div#audio_controls div#progress span#play_progress,
   div.audioExcerpt div#videocontrols div#progress span#play_progress,
@@ -2364,35 +2395,23 @@ a {
   div.videoExcerpt div#videocontrols div#time {
     width: 100%;
   }
-  div.audioExcerpt div#audio_controls div#time span,
-  div.audioExcerpt div#videocontrols div#time span,
-  div.videoExcerpt div#audio_controls div#time span,
-  div.videoExcerpt div#videocontrols div#time span {
-    font-size: 0.7em;
-  }
-  div.audioExcerpt div#audio_controls div#time span#duration_time,
-  div.audioExcerpt div#videocontrols div#time span#duration_time,
-  div.videoExcerpt div#audio_controls div#time span#duration_time,
-  div.videoExcerpt div#videocontrols div#time span#duration_time {
-    font-size: 0.9em;
-  }
-  div.audioExcerpt div#audio_controls div#time span#current_time,
-  div.audioExcerpt div#videocontrols div#time span#current_time,
-  div.videoExcerpt div#audio_controls div#time span#current_time,
-  div.videoExcerpt div#videocontrols div#time span#current_time {
-    font-size: 0.9em;
+  div.audioExcerpt div#audio_controls div#time label,
+  div.audioExcerpt div#videocontrols div#time label,
+  div.videoExcerpt div#audio_controls div#time label,
+  div.videoExcerpt div#videocontrols div#time label {
+    font-size: 0.5em;
   }
   div.audioExcerpt div#audio_controls div#video_seek label,
   div.audioExcerpt div#videocontrols div#video_seek label,
   div.videoExcerpt div#audio_controls div#video_seek label,
   div.videoExcerpt div#videocontrols div#video_seek label {
-    width: 19%;
+    width: 20%;
   }
   div.audioExcerpt div#audio_controls div#video_seek input[type="range"],
   div.audioExcerpt div#videocontrols div#video_seek input[type="range"],
   div.videoExcerpt div#audio_controls div#video_seek input[type="range"],
   div.videoExcerpt div#videocontrols div#video_seek input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt div#audio_controls div#video_volume,
   div.audioExcerpt div#videocontrols div#video_volume,
@@ -2404,13 +2423,13 @@ a {
   div.audioExcerpt div#videocontrols div#video_volume label,
   div.videoExcerpt div#audio_controls div#video_volume label,
   div.videoExcerpt div#videocontrols div#video_volume label {
-    font-size: 0.8em;
+    font-size: 0.65em;
   }
   div.audioExcerpt div#audio_controls div#video_volume input[type="range"],
   div.audioExcerpt div#videocontrols div#video_volume input[type="range"],
   div.videoExcerpt div#audio_controls div#video_volume input[type="range"],
   div.videoExcerpt div#videocontrols div#video_volume input[type="range"] {
-    height: 32px;
+    height: 20px;
   }
   div.audioExcerpt iframe,
   div.videoExcerpt iframe {

@@ -69,9 +69,9 @@ function audioplayer_callback( $atts ) {
 				</div>
 
 				<div id="time">
-					<span><?php esc_html_e( 'Current Time', 'clashvibes' ); ?></span>
+					<label><?php esc_html_e( 'Current', 'clashvibes' ); ?></label>
 					<span id="current_time">00:00</span>
-					<span><?php esc_html_e( 'Duration', 'clashvibes' ); ?></span>
+					<label><?php esc_html_e( 'Duration', 'clashvibes' ); ?></label>
 					<span id="duration_time">00:00</span>
 				</div>
 
