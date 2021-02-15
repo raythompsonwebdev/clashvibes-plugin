@@ -43,8 +43,8 @@ function clashvibes_videoplayer_callback( $atts ) {
 	?>
  <div class="videoExcerpt">
 
-		<!--Video sources-->
-		<video id="video_player" poster="<?php echo esc_url(plugin_dir_path( __FILE__ ) . $title); ?>">
+		<!--Video sources echo esc_url(plugin_dir_path( __FILE__ ) . $title);-->
+		<video id="video_player" poster="<?php echo esc_url(plugin_dir_url( __FILE__ ) . $title); ?>">
 			<source src="<?php echo esc_url( $src ); ?>.mp4" preload="metadata" type='video/mp4'  />
 			<source src="<?php echo esc_url( $src ); ?>.m4v" preload="metadata" type='video/m4v'  />
 			<source src="<?php echo esc_url( $src ); ?>.webm" preload="metadata" type='video/webm' />

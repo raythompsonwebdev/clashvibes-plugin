@@ -21,3 +21,7 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+code-register-uninstall-hook.txt
+uninstall.php
+notes-example-techniques.txt

@@ -1,9 +1,7 @@
 <?php
 /**
- * PHP version 7
- *
  * Plugin Name:  clashvibes-plugin
- * Description:  clashvibes audio/video plugin.
+ * Description:  custom posts and audio/video player plugin.
  * Plugin URI:   https://clashvibes.raythompsonwebdev.co.uk
  * Author:       Raymond Thompson
  * Version:      1.0
@@ -19,7 +17,7 @@
  * @copyright  2017 Raymond Thompson
  * @license    http://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
  * @version    GIT: https://github.com/raythompsonwebdev/clashvibes.git
- * @link       http:www.raythompsonwebdev.co.uk custom template
+ * @link       https://clashvibes.raythompsonwebdev.co.uk 
  */
 
 // exit if file is called directly
@@ -217,4 +215,16 @@ add_action( 'save_post', 'clashvibes_meta_save' );
 require_once plugin_dir_path( __FILE__ ) . '/includes/clashvibes-shorties-audio.php';
 
 require_once plugin_dir_path( __FILE__ ) . '/includes/clashvibes-shorties-video.php';
+
+
+
+// remove options on uninstall
+// function clashvibes_on_uninstall() {
+
+// 	if ( ! current_user_can( 'activate_plugins' ) ) return;
+
+// 	delete_option( 'clashvibes_options' );
+
+// }
+// register_uninstall_hook( __FILE__, 'clashvibes_on_uninstall' );
 
