@@ -1,4 +1,4 @@
-var audioControls = document.getElementById('audio_controls')
+var audioControls = document.getElementById('audio-controls')
 
 //Stop if HTML5 video isn't supported
 if (!document.createElement('audio').canPlayType) {
@@ -9,7 +9,7 @@ var audio = document.querySelector('audio')
 
 // Play/Pause ============================//
 
-var playToggle = document.getElementById('play_toggle')
+var playToggle = document.getElementById('play-toggle')
 
 playToggle.addEventListener('click', function () {
 	if (audio.paused) {
