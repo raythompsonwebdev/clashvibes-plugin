@@ -1,4 +1,5 @@
 <?php
+
 /**
  * *PHP version 7
  *
@@ -9,6 +10,7 @@
  * Author: Raymond Thompson
  * Author URI: https://clashvibes.raythompsonwebdev.co.uk
  * License: GPL2
+ *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @category   Audio Plugin
@@ -20,18 +22,15 @@
  * @version    GIT: https://github.com/raythompsonwebdev/clashvibes.git
  * @link       http:www.raythompsonwebdev.co.uk custom template
  */
-
-
 /**
  * Creating a function to create our CPT.
  */
 function clashvibes_audio_custom_post_type() {
-
 	$labels = array(
 		'name'                  => _x( 'Sound Clash Audio', 'Post Type General Name', 'clashvibes' ),
 		'singular_name'         => _x( 'Sound Clash Audio', 'Post Type Singular Name', 'clashvibes' ),
-		'menu_name'             => __( 'Sound Clash Audio', 'Admin Menu text', 'clashvibes' ),
-		'name_admin_bar'        => __( 'Sound Clash Audio', 'Add New on Toolbar', 'clashvibes' ),
+		'menu_name'             => __( 'Sound Clash Audio', 'Admin Menu text' ),
+		'name_admin_bar'        => __( 'Sound Clash Audio', 'Add New on Toolbar' ),
 		'parent_item_colon'     => __( 'Parent Sound Clash Audio', 'clashvibes' ),
 		'all_items'             => __( 'Sound Clash Audio', 'clashvibes' ),
 		'view_item'             => __( 'View Sound Clash Audio', 'clashvibes' ),
@@ -52,29 +51,23 @@ function clashvibes_audio_custom_post_type() {
 		'label'                => __( 'Sound Clash Audio', 'clashvibes' ),
 		'description'          => __( 'Sound Clash Audio news and reviews', 'clashvibes' ),
 		'labels'               => $labels,
-		'show_in_rest' 				 => true,
+		'show_in_rest'         => true,
 		'supports'             => array( 'title', 'editor', 'post-formats', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields' ),
 		'taxonomies'           => array( 'audio-category', 'post_tag' ),
-		/**
-		 * A hierarchical CPT is like Pages and can have
-		 * Parent and child items. A non-hierarchical CPT
-		 * is like Posts.
-		 *
-		 */
-    //'menu_icon'   => get_stylesheet_directory_uri() . '/images/portfolio-icon.png',
+		'menu_icon'            => get_stylesheet_directory_uri() . '/images/portfolio-icon.png',
 		'register_meta_box_cb' => 'add_audio_clashes_metaboxes',
 		'hierarchical'         => false,
 		'public'               => true,
 		'show_ui'              => true,
 		'show_in_menu'         => true,
 		'show_in_nav_menus'    => true,
-    'show_in_admin_bar'    => true,
-    'show_in_rest'         => true,
-    'menu_icon'            => 'dashicons-welcome-widgets-menus',
+		'show_in_admin_bar'    => true,
+		'show_in_rest'         => true,
+		'menu_icon'            => 'dashicons-welcome-widgets-menus',
 		'menu_position'        => 5,
 		'can_export'           => true,
-    'query_var'            => true,
-    'rewrite'              => array( 'slug' => 'clash-audio' ),
+		'query_var'            => true,
+		'rewrite'              => array( 'slug' => 'clash-audio' ),
 		'has_archive'          => true,
 		'exclude_from_search'  => false,
 		'publicly_queryable'   => true,
@@ -87,14 +80,10 @@ function clashvibes_audio_custom_post_type() {
 
 /**
  * Creating a function to create our CPT.
+ *
+ * @return void
  */
 function clashvibes_video_custom_post_type() {
-
-	/**
-	 * 'menu_icon'   => get_stylesheet_directory_uri() . '/images/portfolio-icon.png',
-	 * 'menu_icon' => 'dashicons-download',
-	 */
-
 	// Set UI labels for Video Custom Post Type.
 	$labels = array(
 		'name'                  => _x( 'Sound Clash Video', 'Post Type General Name', 'clashvibes' ),
@@ -122,22 +111,22 @@ function clashvibes_video_custom_post_type() {
 		'label'                => __( 'Sound Clash Video', 'clashvibes' ),
 		'description'          => __( 'Sound Clash Video news and reviews', 'clashvibes' ),
 		'labels'               => $labels,
-		'show_in_rest' 				 => true,
+		'show_in_rest'         => true,
 		'supports'             => array( 'title', 'editor', 'post-formats', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields' ),
 		'taxonomies'           => array( 'video-category', 'post_tag' ),
-    //'menu_icon'   => get_stylesheet_directory_uri() . '/images/portfolio-icon.png',
+		'menu_icon'            => get_stylesheet_directory_uri() . '/images/portfolio-icon.png',
 		'register_meta_box_cb' => 'add_video_clashes_metaboxes',
 		'hierarchical'         => false,
 		'public'               => true,
 		'show_ui'              => true,
 		'show_in_menu'         => true,
-    'show_in_nav_menus'    => true,
-    'show_in_rest'         => true,
-    'menu_icon'            => 'dashicons-welcome-widgets-menus',
+		'show_in_nav_menus'    => true,
+		'show_in_rest'         => true,
+		'menu_icon'            => 'dashicons-welcome-widgets-menus',
 		'show_in_admin_bar'    => true,
 		'menu_position'        => 5,
-    'query_var'            => true,
-    'rewrite'              => array( 'slug' => 'clash-video' ),
+		'query_var'            => true,
+		'rewrite'              => array( 'slug' => 'clash-video' ),
 		'can_export'           => true,
 		'has_archive'          => true,
 		'exclude_from_search'  => false,
@@ -145,8 +134,5 @@ function clashvibes_video_custom_post_type() {
 		'capability_type'      => 'post',
 	);
 
-	// Registering Video Custom Post Type.
 	register_post_type( 'clash-videos', $args );
 }
-
-
