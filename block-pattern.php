@@ -50,67 +50,47 @@ function clashvibes_plugin_register_block_patterns()
         'title'       => __('Single Event Pattern', 'clashvibes'),
         'description' => _x('Columns for making lists with image and header. ', 'Block pattern description', 'clashvibes'),
         'content'     => '
-        <!-- wp:group {"align":"wide"} -->
+        <!-- wp:group -->
 				<div class="wp-block-group alignwide">
 					<div class="wp-block-group__inner-container">
 
-						<!-- wp:columns {"align":"wide"} -->
-						<div class="wp-block-columns alignwide">
-							<!-- wp:column -->
-							<div class="wp-block-column">
+          <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:heading -->
+            <h2>Location</h2>
+            <!-- /wp:heading -->
 
-							  <!-- wp:heading {"level":4} -->
-								<h4>Location</h4>
-								<!-- /wp:heading -->
+            <!-- wp:paragraph -->
+            <p>...</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column -->
 
-                <!-- wp:paragraph -->
-                <p>..</p>
-                <!-- /wp:paragraph -->
+            <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:heading -->
+            <h2>Date</h2>
+            <!-- /wp:heading -->
 
-							</div>
-							<!-- /wp:column -->
+            <!-- wp:paragraph -->
+            <p>...</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column -->
 
-							<!-- wp:column -->
-							<div class="wp-block-column">
+            <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:heading -->
+            <h2>Details</h2>
+            <!-- /wp:heading -->
 
-								<!-- wp:heading {"level":4} -->
-								<h4>Date</h4>
-								<!-- /wp:heading -->
+            <!-- wp:paragraph -->
+            <p>...</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column -->
 
-                <!-- wp:paragraph -->
-                <p>..</p>
-                <!-- /wp:paragraph -->
+            <!-- wp:column {"verticalAlignment":"center"} -->
+            <div class="wp-block-column is-vertically-aligned-center"><!-- wp:button {"width":100,"style":{"border":{"radius":"12px"}},"className":"is-style-fill"} /--></div>
+            <!-- /wp:column -->
 
-							</div>
-							<!-- /wp:column -->
-
-							<!-- wp:column -->
-							<div class="wp-block-column">
-
-                <!-- wp:heading {"level":4} -->
-                <h4>Details</h4>
-                <!-- /wp:heading -->
-
-                <!-- wp:paragraph -->
-                <p>..</p>
-                <!-- /wp:paragraph -->
-
-							</div>
-							<!-- /wp:column -->
-
-							<!-- wp:column -->
-							<div class="wp-block-column">
-
-              <!-- wp:button {"width":75,"style":{"border":{"radius":"12px"}},"className":"is-style-fill"} /-->
-
-							</div>
-							<!-- /wp:column -->
-						</div>
-						<!-- /wp:columns -->
-
-					</div>
-				</div>
-				<!-- /wp:group -->',
+          </div>
+        </div>
+        <!-- /wp:group -->',
         'categories'  => array('events-page-block-pattern'),
       )
     );
