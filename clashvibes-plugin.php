@@ -33,7 +33,7 @@ remove_action('wp_head', 'wp_generator');
 define('CVWD_VERSION', '1.0.0');
 define('CVWDPATH', plugin_dir_path(__FILE__));
 
-require_once plugin_dir_path(__FILE__) . '/post-types/register.php';
+require_once plugin_dir_path(__FILE__) . './post-types/register.php';
 
 // Audio & Video Custom Post.
 add_action('init', 'clashvibes_audio_custom_post_type', 0);
@@ -41,7 +41,7 @@ add_action('init', 'clashvibes_video_custom_post_type', 0);
 add_action('init', 'clashvibes_events_custom_post_type', 0);
 
 
-require_once plugin_dir_path(__FILE__) . '/taxonomies/register.php';
+require_once plugin_dir_path(__FILE__) . './taxonomies/register.php';
 
 // Audio & Video Taxonomy.
 add_action('init', 'clashvibes_register_taxonomies_audio', 0);
@@ -311,7 +311,8 @@ function clashvibes_events_meta_box_fields($post)
       if (!empty($clashvibes_event_stored_meta['event_details'])) :
         echo esc_attr($clashvibes_event_stored_meta['event_details'][0]);
       endif;
-      ?>"></textarea>
+      ?>
+	  "></textarea>
   </p>
 
 <?php
@@ -373,12 +374,4 @@ function clashvibes_events_meta_save($post_id)
 }
 add_action('save_post', 'clashvibes_events_meta_save');
 
-
 require_once plugin_dir_path(__FILE__) . 'block-pattern.php';
-
-// remove options on uninstall.
-// function clashvibes_on_uninstall() {.
-// if ( ! current_user_can( 'activate_plugins' ) ) return;.
-// delete_option( 'clashvibes_options' );.
-// }.
-// register_uninstall_hook( __FILE__, 'clashvibes_on_uninstall' );.
