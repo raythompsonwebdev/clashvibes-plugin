@@ -31,15 +31,10 @@ function clashvibes_plugin_register_block_patterns()
 {
   if (class_exists('WP_Block_Patterns_Registry')) {
 
-    $events = '<!-- wp:group {"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group"><!-- wp:spacer {"height":"20px"} -->
-    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
-    <!-- wp:columns -->
-    <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
-    <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"id":2565,"sizeSlug":"large","linkDestination":"none"} -->
-    <figure class="wp-block-image size-large"><img src="http://localhost:10009/wp-content/uploads/2022/12/supersonic-love-injection-843x1200.webp" alt="" class="wp-image-2565"/></figure>
+    $events = '<!-- wp:columns {"style":{"color":{"gradient":"radial-gradient(rgb(255,105,0) 0%,rgb(207,46,46) 100%)"}},"textColor":"white","fontSize":"medium"} -->
+    <div class="wp-block-columns has-white-color has-text-color has-background has-medium-font-size" style="background:radial-gradient(rgb(255,105,0) 0%,rgb(207,46,46) 100%)"><!-- wp:column {"width":"33.33%"} -->
+    <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"id":2562,"sizeSlug":"large","linkDestination":"none"} -->
+    <figure class="wp-block-image size-large"><img src="" alt="" class="wp-image-2562"/></figure>
     <!-- /wp:image --></div>
     <!-- /wp:column -->
 
@@ -49,7 +44,7 @@ function clashvibes_plugin_register_block_patterns()
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
-    <p>Supersonic V LP</p>
+    <p>David Rodigan v Killamanjaro</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:heading -->
@@ -82,12 +77,7 @@ function clashvibes_plugin_register_block_patterns()
     <!-- /wp:button --></div>
     <!-- /wp:buttons --></div>
     <!-- /wp:column --></div>
-    <!-- /wp:columns -->
-
-    <!-- wp:spacer {"height":"20px"} -->
-    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer --></div>
-    <!-- /wp:group -->';
+    <!-- /wp:columns -->';
 
     register_block_pattern_category(
       'event-page-block-pattern',
