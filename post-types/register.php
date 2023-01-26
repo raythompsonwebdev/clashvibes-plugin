@@ -1,7 +1,7 @@
 <?php
 
 /**
- * *PHP version 8.1
+ *
  *
  * Plugin Name: Clashvibes-Plugin
  * Plugin URI: https://clashvibes.raythompsonwebdev.co.uk

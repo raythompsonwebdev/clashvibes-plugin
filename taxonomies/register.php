@@ -1,7 +1,7 @@
 <?php
 
 /**
- * *PHP version 8.1
+ *
  *
  * Audio Plugin Taxonomy | registeraudio.php.
  *

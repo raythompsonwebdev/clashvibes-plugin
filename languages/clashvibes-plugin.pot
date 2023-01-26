@@ -1,0 +1,380 @@
+# Copyright (C) 2023 Raymond Thompson
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clashvibes custom posts. 2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/clashvibes-plugin\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-26T22:49:33+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: clashvibes\n"
+
+#. Plugin Name of the plugin
+msgid "Clashvibes custom posts."
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://clashvibes.raythompsonwebdev.co.uk"
+msgstr ""
+
+#. Description of the plugin
+msgid "Custom posts plugin for clashvibes theme - audio, video and events."
+msgstr ""
+
+#. Author of the plugin
+msgid "Raymond Thompson"
+msgstr ""
+
+#: clashvibes-plugin.php:70
+msgid "Video Clash Details"
+msgstr ""
+
+#: clashvibes-plugin.php:91
+msgid "Audio Clash Details"
+msgstr ""
+
+#: clashvibes-plugin.php:111
+msgid "Events Clash Details"
+msgstr ""
+
+#: post-types/register.php:31
+msgctxt "Post Type General Name"
+msgid "Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:32
+msgctxt "Post Type Singular Name"
+msgid "Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:35
+msgid "Parent Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:36
+#: post-types/register.php:52
+msgid "Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:37
+msgid "View Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:38
+msgid "Add New Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:39
+msgid "Add Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:40
+msgid "Edit Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:41
+msgid "Update Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:42
+msgid "Search Sound Clash Audio"
+msgstr ""
+
+#: post-types/register.php:43
+#: post-types/register.php:103
+#: post-types/register.php:164
+msgid "Not Found"
+msgstr ""
+
+#: post-types/register.php:44
+#: post-types/register.php:104
+#: post-types/register.php:165
+msgid "Not found in Trash"
+msgstr ""
+
+#: post-types/register.php:45
+#: post-types/register.php:105
+#: post-types/register.php:166
+msgid "Featured Image"
+msgstr ""
+
+#: post-types/register.php:46
+#: post-types/register.php:106
+#: post-types/register.php:167
+msgid "Set featured image"
+msgstr ""
+
+#: post-types/register.php:47
+#: post-types/register.php:107
+#: post-types/register.php:168
+msgid "Remove featured image"
+msgstr ""
+
+#: post-types/register.php:48
+#: post-types/register.php:108
+#: post-types/register.php:169
+msgid "Use as featured image"
+msgstr ""
+
+#: post-types/register.php:53
+msgid "Sound Clash Audio news and reviews"
+msgstr ""
+
+#: post-types/register.php:91
+msgctxt "Post Type General Name"
+msgid "Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:92
+msgctxt "Post Type Singular Name"
+msgid "Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:93
+#: post-types/register.php:94
+#: post-types/register.php:96
+#: post-types/register.php:113
+msgid "Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:95
+msgid "Parent Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:97
+msgid "View Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:98
+msgid "Add New Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:99
+msgid "Add Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:100
+msgid "Edit Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:101
+msgid "Update Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:102
+msgid "Search Sound Clash Video"
+msgstr ""
+
+#: post-types/register.php:114
+msgid "Sound Clash Video news and reviews"
+msgstr ""
+
+#: post-types/register.php:152
+msgctxt "Post Type General Name"
+msgid "Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:153
+msgctxt "Post Type Singular Name"
+msgid "Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:154
+#: post-types/register.php:155
+#: post-types/register.php:157
+#: post-types/register.php:174
+msgid "Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:156
+msgid "Parent Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:158
+msgid "View Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:159
+msgid "Add New Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:160
+msgid "Add Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:161
+msgid "Edit Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:162
+msgid "Update Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:163
+msgid "Search Sound Clash Events"
+msgstr ""
+
+#: post-types/register.php:175
+msgid "Sound Clash Events news and reviews"
+msgstr ""
+
+#: taxonomies/register.php:26
+msgctxt "taxonomy general name"
+msgid "Audio Categories"
+msgstr ""
+
+#: taxonomies/register.php:27
+msgctxt "taxonomy singular name"
+msgid "Audio Category"
+msgstr ""
+
+#: taxonomies/register.php:28
+msgid "Search Audio Categories"
+msgstr ""
+
+#: taxonomies/register.php:29
+msgid "All Audio Categories"
+msgstr ""
+
+#: taxonomies/register.php:30
+msgid "Parent Audio Category"
+msgstr ""
+
+#: taxonomies/register.php:31
+msgid "Parent Audio Category:"
+msgstr ""
+
+#: taxonomies/register.php:32
+msgid "Edit Audio Category"
+msgstr ""
+
+#: taxonomies/register.php:33
+msgid "Update Audio Category"
+msgstr ""
+
+#: taxonomies/register.php:34
+msgid "Add New Audio Category"
+msgstr ""
+
+#: taxonomies/register.php:35
+msgid "New Audio Category"
+msgstr ""
+
+#: taxonomies/register.php:36
+#: taxonomies/register.php:80
+#: taxonomies/register.php:125
+msgid "Separate topics with commas"
+msgstr ""
+
+#: taxonomies/register.php:37
+#: taxonomies/register.php:81
+#: taxonomies/register.php:126
+msgid "Add or remove topics"
+msgstr ""
+
+#: taxonomies/register.php:38
+#: taxonomies/register.php:82
+#: taxonomies/register.php:127
+msgid "Choose from common topics"
+msgstr ""
+
+#: taxonomies/register.php:39
+msgid "Audio Categories"
+msgstr ""
+
+#: taxonomies/register.php:70
+msgctxt "taxonomy general name"
+msgid "Video Categories"
+msgstr ""
+
+#: taxonomies/register.php:71
+msgctxt "taxonomy singular name"
+msgid "Video Category"
+msgstr ""
+
+#: taxonomies/register.php:72
+msgid "Search Video Categories"
+msgstr ""
+
+#: taxonomies/register.php:73
+msgid "All Video Categories"
+msgstr ""
+
+#: taxonomies/register.php:74
+msgid "Parent Video Category"
+msgstr ""
+
+#: taxonomies/register.php:75
+msgid "Parent Video Category:"
+msgstr ""
+
+#: taxonomies/register.php:76
+msgid "Edit Video Category"
+msgstr ""
+
+#: taxonomies/register.php:77
+msgid "Update Video Category"
+msgstr ""
+
+#: taxonomies/register.php:78
+msgid "Add New Video Category"
+msgstr ""
+
+#: taxonomies/register.php:79
+msgid "New Video Category"
+msgstr ""
+
+#: taxonomies/register.php:83
+msgid "Video Categories"
+msgstr ""
+
+#: taxonomies/register.php:115
+msgctxt "taxonomy general name"
+msgid "Events Categories"
+msgstr ""
+
+#: taxonomies/register.php:116
+msgctxt "taxonomy singular name"
+msgid "Events Category"
+msgstr ""
+
+#: taxonomies/register.php:117
+msgid "Search Events Categories"
+msgstr ""
+
+#: taxonomies/register.php:118
+msgid "All Events Categories"
+msgstr ""
+
+#: taxonomies/register.php:119
+msgid "Parent Events Category"
+msgstr ""
+
+#: taxonomies/register.php:120
+msgid "Parent Events Category:"
+msgstr ""
+
+#: taxonomies/register.php:121
+msgid "Edit Events Category"
+msgstr ""
+
+#: taxonomies/register.php:122
+msgid "Update Events Category"
+msgstr ""
+
+#: taxonomies/register.php:123
+msgid "Add New Events Category"
+msgstr ""
+
+#: taxonomies/register.php:124
+msgid "New Events Category"
+msgstr ""
+
+#: taxonomies/register.php:128
+msgid "Events Categories"
+msgstr ""
