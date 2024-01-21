@@ -26,3 +26,4 @@ code-register-uninstall-hook.txt
 uninstall.php
 notes-example-techniques.txt
 includes/
+vendor/
